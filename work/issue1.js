@@ -9,6 +9,8 @@ function newData(data) {
 const issue1 = new newData(pokemonData[17]);
 
 console.log(issue1);
+
+console.log(issue1);
 module.exports = {
   issue1,
 };
