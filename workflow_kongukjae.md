@@ -17,3 +17,7 @@ cmd order
 -babel transcompiler
 8. npm install @babel/core -D
 
+9. webpack.config.js return 부분 key , resolve, moudule 추가
+
+10. npm install @babel/preset-env 
+11. npm install @babel/preset-react -D
