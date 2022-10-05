@@ -21,3 +21,7 @@ cmd order
 
 10. npm install @babel/preset-env 
 11. npm install @babel/preset-react -D
+
+12. npm install @babel/plugin-transform-runtime 
+13. npm install @babel/plugin-syntax-dynamic-import
+14. npm install @babel/plugin-proposal-class-properties -D
