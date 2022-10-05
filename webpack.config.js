@@ -35,9 +35,22 @@ module.exports = (_env, argv) => {
               }
             }
           ]
-        }
+        },
+        {
+          test: /\.css$/i,
+          use: [
+            isProd ? MiniCssExtractPlugin.loader : 'style-loader',
+            'css-loader',
+          ],
+        },
       ]
     },
+    plugins: [
+      new MiniCssExtractPlugin({
+        filename: 'assets/css/[name].[contenthash:8].css',
+        chunkFilename: 'assets/css/[name].[contenthash:8].chunk.css',
+      }),
+    ],
     output: {
       path: getAbsolutePath('dist'),
       filename: 'assets/js/[name].[contenthash:8].js',

@@ -29,3 +29,7 @@ cmd order
 15. npm install babel-plugin-transform-react-remove-prop-types
 16. npm install @babel/plugin-transform-react-inline-elements
 17. npm install @babel/plugin-transform-react-constant-elements -D
+
+18. npm install style-loader
+19. npm install css-loader
+20. npm install mini-css-extract-plugin -D
