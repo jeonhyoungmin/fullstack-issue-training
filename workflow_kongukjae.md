@@ -25,3 +25,7 @@ cmd order
 12. npm install @babel/plugin-transform-runtime 
 13. npm install @babel/plugin-syntax-dynamic-import
 14. npm install @babel/plugin-proposal-class-properties -D
+
+15. npm install babel-plugin-transform-react-remove-prop-types
+16. npm install @babel/plugin-transform-react-inline-elements
+17. npm install @babel/plugin-transform-react-constant-elements -D
