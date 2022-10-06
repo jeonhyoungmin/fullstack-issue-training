@@ -16,3 +16,5 @@ const issue14 = new getData(pokemonData[31]);
 module.exports = {
   issue14,
 };
+
+console.log("hi");
