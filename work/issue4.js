@@ -54,4 +54,3 @@ function makePokemonJson() {
   });
 }
 makePokemonJson();
-{"id":21,"name":"Spearow","koreaName":"깨비참"}
