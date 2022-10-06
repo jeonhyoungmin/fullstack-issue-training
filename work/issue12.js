@@ -1,7 +1,7 @@
 
-    const issue12 = "work";
-
-    module.exports = {
-      issue12
-    };
-  
+        const issue12 = "work";
+    
+        module.exports = {
+          issue12
+        };
+      
