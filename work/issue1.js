@@ -1,7 +1,16 @@
+const pokemonData = require("../fromDB/pokemon.json");
 
-    const issue1 = "work";
+function newData(data) {
+  this.id = data.id;
+  this.name = data.name;
+  this.koreaName = data.koreaName;
+}
 
-    module.exports = {
-      issue1
-    };
-  
+const issue1 = new newData(pokemonData[17]);
+
+console.log(issue1);
+
+console.log(issue1);
+module.exports = {
+  issue1,
+};
