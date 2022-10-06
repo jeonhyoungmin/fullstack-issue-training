@@ -5,16 +5,12 @@
 예를 들면 23번은 40번(23+17) 포켓몬 {id : 40, name : kongminam, koreaName : 공사장}
 */
 
-/* 
-const issue4 = "work"
-  module.exports = {
-    issue4
-}; 
-*/
-
+/* 모듈 호출 */
 const path = require("path");
 const pokemon = require('../fromDB/pokemon');
 const fs = require('fs');
+
+
 
 /* 파일명+17에 해당하는 번호(pokemonNumber)를 구하는 함수 */
 let issueNumber
@@ -28,7 +24,10 @@ let pokemonNumber
 console.log(pokemonNumber)
 
 // console.log(pokemon[0].name); // Bulbasaur
+
 // console.log(pokemon.length); // 905
+
+
 
 /* 생성자함수 선언 */
 class Pokemon {
@@ -39,28 +38,20 @@ class Pokemon {
   }
 }
 
+
+
 /* 생성자함수 호출 */
 const work = new Pokemon(pokemon[pokemonNumber].id, pokemon[pokemonNumber].name, pokemon[pokemonNumber].koreaName)
 console.log(work)
 
 
-// function structPokemonObjectReturnArray(data) {
-//   const setData = [];
-//   data.all().forEach((element, index) => {
-//     let temp = new Pokemon(index+1, data.getName(index+1), data.getName(index+1, "ko"));
-//     setData.push(temp);
-//   });
-//   return setData;
-// }
 
-// console.log(structPokemonObjectReturnArray(pokemon));
-
-// function makePokemonJson(arr) {
-//   let setJson = JSON.stringify(arr, null, 2);
-//   fs.writeFile('./pokemon.json', setJson, 'utf-8', (err) => {
-//     if(err) throw err;
-//   });
-// }
-
-// let makeTemp = structPokemonObjectReturnArray(pokemon);
-// makePokemonJson(makeTemp);
+/* 파일에 내용 추가 */
+function makePokemonJson() {
+  let setJson = JSON.stringify(work);
+  fs.appendFile('issue4.js', setJson, 'utf-8', (err) => {
+    if(err) throw err;
+  });
+}
+makePokemonJson();
+{"id":21,"name":"Spearow","koreaName":"깨비참"}
