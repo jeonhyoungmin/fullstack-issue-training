@@ -1,7 +1,20 @@
+const pokemon = require('../fromDB/pokemon.json');
+const fs = require('fs');
 
-    const issue6 = "work";
+// console.log(pokemon[22]);
 
-    module.exports = {
-      issue6
-    };
-  
+class Pokemon23 {
+  constructor(id, name, koreaName){
+    this.id = id;
+    this.name = name;
+    this.koreaName = koreaName;
+  }
+}
+
+const issue6 = new Pokemon23(pokemon[22].id, pokemon[22].name, pokemon[22].koreaName);
+// new Pokemon23();
+console.log(issue6);
+
+module.exports = {
+  issue6
+};
